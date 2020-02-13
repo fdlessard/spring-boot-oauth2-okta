@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+logging:
+  level.io.fdlessard.codebites.oauth2.okta: DEBUG
+#  level.root: DEBUG
+
+
+security:
+  oauth2:
+    client:
+      client-id: 0oa27qvkzevDdLTBm4x6
+      client-secret: 6yq4EMBPclOjtAGY0MsiQQvn2KVYwNyMiNNHWkfu
+      accessTokenUri: https://dev-835385.okta.com/oauth2/v1/token
+      userAuthorizationUri: https://dev-835385.okta.com/oauth2/v1/authorize
+      clientAuthenticationScheme: form
+      scope: openid profile email
+    resource:
+      userInfoUri: https://dev-835385.okta.com/oauth2/v1/userinfo
+//      token-info-uri: https://github.com/login/oauth/check_token

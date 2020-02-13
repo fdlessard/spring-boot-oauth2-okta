@@ -1,33 +1,10 @@
-# In memory H2 database console
-  
-- http://localhost:8080/h2-console
-
-# OAuth2 Authorization end point
-
-## Obtain a token
-
-  - POST http://localhost:8081/oauth/token
-  
-    ![postman-1](postman-1.png)
-  
-    ![postman-2](postman-2.png)
-  
-## Check a token
-
-  - POST http://localhost:8081/oauth/check_token
-
-    ![postman-3](postman-3.png)
-  
-    ![postman-4](postman-4.png)
-  
-
-### Database password BCrypt
-
-- https://www.browserling.com/tools/bcrypt
 
 
+# References
 
-
+https://developer.okta.com/blog/2017/03/21/spring-boot-oauth
+https://developer.okta.com/blog/2019/05/02/spring-boot-single-sign-on-oauth-2
+https://developer.okta.com/blog/2018/04/02/client-creds-with-spring-boot
 
 
 https://shekhargulati.com/2018/02/15/single-sign-on-in-spring-boot-applications-with-spring-security-oauth/
