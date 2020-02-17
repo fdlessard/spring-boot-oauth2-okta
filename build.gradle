@@ -1,6 +1,6 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.4.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
 }
 
@@ -14,30 +14,23 @@ repositories {
 }
 
 ext {
-    set('springCloudVersion', "Hoxton.SR1")
+    set('springCloudVersion', "Greenwich.SR2")
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.okta.spring:okta-spring-boot-starter:0.6.0'
+    implementation 'org.springframework.cloud:spring-cloud-starter-oauth2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    implementation 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
 }
 
 dependencyManagement {
     imports {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
     }
-}
-
-dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'com.okta.spring:okta-spring-boot-starter:1.4.0'
-    implementation 'org.springframework.cloud:spring-cloud-starter-oauth2'
-
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-
-    implementation 'org.projectlombok:lombok:1.18.12'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
-
-    runtimeOnly 'org.springframework.boot:spring-boot-devtools:2.2.4.RELEASE'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
 }
