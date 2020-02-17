@@ -15,7 +15,7 @@ spring:
 #      client-id: 0oa27qvkzevDdLTBm4x6
 #      client-secret: 6yq4EMBPclOjtAGY0MsiQQvn2KVYwNyMiNNHWkfu
 #      accessTokenUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/token
-#      userAuthorizationUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/authorize
+#      userAuthorizationUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/
 #      clientAuthenticationScheme: form
 #      scope: openid profile email
 #    resource:
@@ -41,10 +41,10 @@ spring:
 
 okta:
   oauth2:
-    clientId: 0oa2a55teeqhX2CcY4x6
-    clientSecret: HvpaK1PR-wWm6dzioLSjXFKMVkNiz6-emo7YHc6A
+    client-id: 0oa2a55teeqhX2CcY4x6
+    client-secret: HvpaK1PR-wWm6dzioLSjXFKMVkNiz6-emo7YHc6A
     issuer: https://dev-275566.okta.com/oauth2/default
-
+    redirect-uri: /authorization-code/callback
 
 #okta:
 #  oauth2:
