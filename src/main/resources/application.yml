@@ -3,18 +3,45 @@ server:
 
 logging:
   level.io.fdlessard.codebites.oauth2.okta: DEBUG
-#  level.root: DEBUG
+  #level.root: DEBUG
 
 
-security:
+#security:
+#  oauth2:
+#    client:
+#      client-id: 0oa27qvkzevDdLTBm4x6
+#      client-secret: 6yq4EMBPclOjtAGY0MsiQQvn2KVYwNyMiNNHWkfu
+#      accessTokenUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/token
+#      userAuthorizationUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/authorize
+#      clientAuthenticationScheme: form
+#      scope: openid profile email
+#    resource:
+#      userInfoUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/userinfo
+#//      token-info-uri: https://github.com/login/oauth/check_token
+
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        provider:
+#          okta:
+#            issuer-uri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6
+#        registration:
+#          okta:
+#            client-id: 0oa27qvkzevDdLTBm4x6
+#            client-secret: 6yq4EMBPclOjtAGY0MsiQQvn2KVYwNyMiNNHWkfu
+#      resource:
+#        server: http://localhost:8080
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/keys
+
+okta:
   oauth2:
-    client:
-      client-id: 0oa27qvkzevDdLTBm4x6
-      client-secret: 6yq4EMBPclOjtAGY0MsiQQvn2KVYwNyMiNNHWkfu
-      accessTokenUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/token
-      userAuthorizationUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/authorize
-      clientAuthenticationScheme: form
-      scope: openid profile email
-    resource:
-      userInfoUri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/userinfo
-//      token-info-uri: https://github.com/login/oauth/check_token
+    client-id: 0oa2a55teeqhX2CcY4x6
+    client-secret: HvpaK1PR-wWm6dzioLSjXFKMVkNiz6-emo7YHc6A
+    issuer: https://dev-275566.okta.com/oauth2/default
+#    audience: http://localhost:8080
+spring:
+  main:
+    allow-bean-definition-overriding: true

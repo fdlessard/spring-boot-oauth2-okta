@@ -6,7 +6,6 @@ https://developer.okta.com/blog/2017/03/21/spring-boot-oauth
 https://developer.okta.com/blog/2019/05/02/spring-boot-single-sign-on-oauth-2
 https://developer.okta.com/blog/2018/04/02/client-creds-with-spring-boot
 
-<<<<<<< HEAD
 https://developer.okta.com/quickstart-fragments/java/spring-auth-code/#configure-your-properties
 
 
