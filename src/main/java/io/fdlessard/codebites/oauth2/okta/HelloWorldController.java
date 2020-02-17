@@ -8,16 +8,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @Slf4j
 @RestController
 public class HelloWorldController {
 
-  @GetMapping()
+  @GetMapping("/")
   @ResponseStatus(HttpStatus.OK)
   @ResponseBody
   public String hello() {
 
     log.info("HelloWorldController.hello()");
-    return "Hello world - from ResourceApplication";
+    return "Hello world - from ResourceApplication" ;
   }
+
+
 }

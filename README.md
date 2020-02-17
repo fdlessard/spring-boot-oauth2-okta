@@ -6,6 +6,11 @@ https://developer.okta.com/blog/2017/03/21/spring-boot-oauth
 https://developer.okta.com/blog/2019/05/02/spring-boot-single-sign-on-oauth-2
 https://developer.okta.com/blog/2018/04/02/client-creds-with-spring-boot
 
+https://developer.okta.com/quickstart-fragments/java/spring-auth-code/#configure-your-properties
+
+
+https://www.baeldung.com/spring-security-openid-connect
+
 https://developer.okta.com/blog/2019/03/05/spring-boot-migration
 https://github.com/oktadeveloper/okta-spring-boot-oauth2-migration-example
 

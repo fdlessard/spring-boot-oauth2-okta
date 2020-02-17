@@ -25,17 +25,23 @@ logging:
 #      client:
 #        provider:
 #          okta:
-#            issuer-uri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/oauth2/default
+#            issuer-uri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6
 #        registration:
 #          okta:
 #            client-id: 0oa27qvkzevDdLTBm4x6
 #            client-secret: 6yq4EMBPclOjtAGY0MsiQQvn2KVYwNyMiNNHWkfu
 #      resource:
 #        server: http://localhost:8080
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: https://dev-835385.okta.com/oauth2/aus27r851ruFd3NBo4x6/v1/keys
 
+okta:
+  oauth2:
+    client-id: 0oa2a55teeqhX2CcY4x6
+    client-secret: HvpaK1PR-wWm6dzioLSjXFKMVkNiz6-emo7YHc6A
+    issuer: https://dev-275566.okta.com/oauth2/default
+#    audience: http://localhost:8080
 spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: https://dev-835385.okta.com/oauth2/default/v1/keys
+  main:
+    allow-bean-definition-overriding: true
